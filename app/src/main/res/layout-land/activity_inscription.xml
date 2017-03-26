@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="iut.paci.noelcommunity.InscriptionActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etPseudo"
+        android:hint="Pseudo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/etPsw"
+        android:hint="Mot de passe"
+        android:layout_below="@+id/etPseudo"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/etPseudo" />
+
+    <Button
+        android:onClick="register_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inscription"
+        android:id="@+id/bInscription"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/etPsw"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/etPsw" />
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Se connecter"
+        android:id="@+id/bCoonect"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/holo_red_light"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/bInscription"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

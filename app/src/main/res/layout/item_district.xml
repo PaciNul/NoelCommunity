@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:elevation="0dp"
+    tools:layout_width="match_parent"
+    android:padding="1dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/img"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/img_district1"
+        android:scaleType="centerCrop"
+        android:elevation="1dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAlignment="center"
+        android:gravity="bottom"
+        android:elevation="4dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/lin_lay"
+        android:background="#40000000">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="1"
+            android:id="@+id/nbr"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#fff"
+            android:textSize="60dp"
+            android:layout_marginBottom="20dp"
+            android:elevation="5dp"
+            android:textAlignment="center"
+            android:textColorHint="@android:color/background_light"
+            android:textColorHighlight="@android:color/background_light" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Louvre"
+            android:id="@+id/nom_d"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:elevation="5dp"
+            android:textAlignment="center"
+            android:background="#aa061a34" />
+    </LinearLayout>
+</RelativeLayout>

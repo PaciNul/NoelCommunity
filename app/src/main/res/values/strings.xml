@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">NoelCommunity</string>
+    <string name="tvPseudo">Pseudonyme</string>
+    <string name="tvMdp">Mot de passe</string>
+    <string name="submitConnexion">Connexion</string>
+    <string name="notifConnecte">Vous êtes maintenant connecté</string>
+    <string name="notifConErr0">Erreur ! Les champs ne sont pas conformes !</string>
+    <string name="notifConErr1">Au moins un des champs est vide !</string>
+    <string name="notifConErr2">Le pseudo rentré n\'existe pas !</string>
+    <string name="notifConErr3">Le mot de passe est incorrect !</string>
+    <string name="district1">Vous avez tenté de vous connecter avec les identifiants suivants :</string>
+    <string name="district2">Pseudo :\n%1$s</string>
+    <string name="district3">Mot de passe :\n%1$s</string>
+    <string name="district4">Et c\'est un succès. Félicitations.</string>
+</resources>

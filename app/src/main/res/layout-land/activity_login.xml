@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="iut.paci.noelcommunity.LoginActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/logo"
+        android:src="@drawable/logo"
+        android:contentDescription="Logo login"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Identifiant"
+        android:ems="10"
+        android:id="@+id/ipPseudo"
+        android:layout_alignTop="@id/logo"
+        android:layout_alignLeft="@+id/ipMdp"
+        android:layout_alignStart="@+id/ipMdp" />
+
+    <EditText
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/ipMdp"
+        android:hint="Mot de passe"
+        android:layout_marginLeft="57dp"
+        android:layout_marginStart="57dp"
+        android:layout_below="@+id/ipPseudo"
+        android:layout_toEndOf="@+id/logo"
+        android:layout_toRightOf="@+id/logo" />
+
+    <Button
+        android:onClick="main_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="S&apos;AUTHENTIFIER"
+        android:id="@+id/butConnexion"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/ipMdp"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/ipMdp"
+        android:layout_alignStart="@+id/ipMdp"
+        android:layout_alignRight="@+id/ipMdp"
+        android:layout_alignEnd="@+id/ipMdp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="S&apos;INSCRIRE"
+        android:id="@+id/bInscrire"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_red_light"
+        android:layout_below="@+id/butConnexion"
+        android:layout_marginTop="5dp"
+        android:layout_alignRight="@+id/ipMdp"
+        android:layout_alignEnd="@+id/ipMdp"
+        android:layout_alignStart="@+id/butConnexion" />
+
+
+
+</RelativeLayout>
